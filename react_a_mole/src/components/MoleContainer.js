@@ -3,7 +3,8 @@ import Mole from './Mole'
 import EmptySlot from './EmptySlot'
 
 function MoleContainer(){
-    
+    // This is the useState for the hole whether it is above or below ground.
+  let [displayMoleHole, setMoleHole] = useState(false)
   // State variable for the mole being displayed named displayMole
   //It needs to be ternary based on the assignment
   let displayMole = mole ?<Mole />: <EmptySlot />
