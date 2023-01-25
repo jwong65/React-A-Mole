@@ -14,11 +14,7 @@ export default function EmptySlot(props) {
   })
   return (
     <div>
-      <img style={{'wdith': '30vw'}}
-      src={moleHillImg}
-      //onClick will refer to MoleContainter
-      // onClick={props.scoreCount} This should only be on Mole.js
-      />
+      Hello
     </div>
   )
 }
