@@ -8,15 +8,17 @@ export default function EmptySlot(props) {
     let randSeconds = Math.ceil(Math.random()*2200)
     //set timer to setTimeout.
     let timer = setTimeout(()=>{
-      props.setMoleHill(false)
+      props.toggle(true)
     }, randSeconds)
+    return()=> clearTimeout(timer)
   })
   return (
     <div>
       <img style={{'wdith': '30vw'}}
       src={moleHillImg}
       //onClick will refer to MoleContainter
-      onClick={props.scoreCount}/>
+      // onClick={props.scoreCount} This should only be on Mole.js
+      />
     </div>
   )
 }
