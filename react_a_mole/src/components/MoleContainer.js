@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Mole from './Mole'
 import EmptySlot from './EmptySlot'
 
-function MoleContainer(){
+function MoleContainer(props){
     // This is the useState for the hole whether it is above or below ground.
   let [displayMoleHole, setMoleHole] = useState(false)
   //Function need to handle the score
@@ -19,7 +19,7 @@ function MoleContainer(){
     return(
         <div style={{'display': 'inline-block', 'width': '15vw', 'margin': '1em'}}>
           {/* {displayMole} */}
-          Hello
+          {displayMole}
         </div>
     )
 

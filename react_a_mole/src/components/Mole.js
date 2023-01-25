@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useEffect } from 'react'
 import MoleImg from '../mole.png'
 
 export default function Mole(props) {
