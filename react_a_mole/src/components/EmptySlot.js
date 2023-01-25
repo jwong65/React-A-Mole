@@ -14,7 +14,7 @@ export default function EmptySlot(props) {
   })
   return (
     <div>
-      Hello
+      <img src={moleHillImg} />
     </div>
   )
 }

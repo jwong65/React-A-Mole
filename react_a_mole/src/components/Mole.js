@@ -15,7 +15,7 @@ export default function Mole(props) {
   return (
     
     <div>
-      Bye
+      <img src={MoleImg}/>
     </div>
   )
 }
