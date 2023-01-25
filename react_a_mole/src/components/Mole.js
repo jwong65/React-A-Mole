@@ -15,7 +15,7 @@ export default function Mole(props) {
   return (
     
     <div>
-      <img src={MoleImg}/>
+      <img src={MoleImg} onClick={props.scoreCount} />
     </div>
   )
 }

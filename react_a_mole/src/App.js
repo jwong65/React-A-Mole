@@ -11,7 +11,7 @@ function App() {
     //Empty array but the molecontainer has to be pushed into it.
     let hill = []
     for (let i=0; i<10; i++){
-      hill.push(<MoleContainer score={score} setScore={setScore}/>)
+      hill.push(<MoleContainer key={i} score={score} setScore={setScore}/>)
     }
     return(
       <div>
